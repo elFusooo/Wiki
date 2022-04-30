@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Allinea le immagini</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+        <style>
+            *{
+                text-align: justify;
+            }
+            .justifynt *{
+                text-align: initial;
+            }
+            .flex-height{
+                min-height: 100%;
+            }
+            .flex{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .card-img{
+                width: 100%;
+                aspect-ratio: 1920/1080;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+            }
+            .bg-1{
+                background-image: url("https://www.w3schools.com/w3css/img_car.jpg");
+            }
+            .bg-2{
+                background-image: url("https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg");
+            }
+            .bg-3{
+                background-image: url("https://www.ideegreen.it/wp-content/uploads/2018/08/gabbiano-reale-mediterraneo.jpg");
+            }
+            .bg-4{
+                background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-panel w3-card w3-light-grey justifynt"> 
+            <h4>Come applicare il Tutto</h4>
+            <p>Importa le seguenti classi</p>
+            <div class="w3-code cssHigh">
+                .flex-height{<br>
+                &nbsp; min-height: 100%;<br>
+                }<br>
+                .flex{<br>
+                &nbsp; display: flex;<br>
+                &nbsp; flex-wrap: wrap;<br>
+                }<br>
+                .card-img{<br>
+                &nbsp; width: 100%;<br>
+                &nbsp; aspect-ratio: 1920/1080; /* Ciò che Forza le proporzioni a 1920 di larghezza e 1080 di altezza */<br>
+                &nbsp; background-repeat: no-repeat;<br>
+                &nbsp; background-size: 100%;<br>
+                &nbsp; background-position: center;<br>
+                }<br>
+            </div>
+            <p>Crea il contenitore delle carte</p>
+            <div class="w3-code htmlHigh notranslate">
+                &lt;div class="w3-row flex"><br>
+                &nbsp; ...<br>
+                &lt;/div>
+            </div>
+            <p>Crea le tue carte</p>
+            <div class="w3-code htmlHigh notranslate">
+                &lt;div class="w3-card-4 flex-height"><br>
+                &nbsp; &lt;div class="card-img bg-1">&lt;/div><br>
+                &nbsp; &lt;div class="w3-container"><br>
+                &nbsp; &nbsp; &lt;p>Testo della card...&lt;/p><br>
+                &nbsp; &lt;/div><br>
+                &lt;/div>
+            </div>
+            <p>Crea una classe css con un immagine di sfondo e applica la classe alla card, come nell'esempio precedente</p>
+            <div class="w3-code cssHigh">
+                .bg-1{<br>
+                &nbsp; background-image: url("https://www.w3schools.com/w3css/img_car.jpg");<br>
+                }
+            </div>
+        </div>
+        <h1 class="w3-center">Esempio:</h1>
+        <div class="w3-row flex">
+            <div class="w3-third w3-col s12 m6 l4 w3-padding">
+                <div class="w3-card-4 flex-height">
+                    <div class="card-img bg-1"></div>
+                    <div class="w3-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam vitae enim possimus sint minus aliquam rem! Vitae accusantium nemo odit quae neque, facere labore eaque fugit quas! Quaerat, facilis!</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="w3-third w3-col s12 m6 l4 w3-padding">
+                <div class="w3-card-4 flex-height">
+                    <div class="card-img bg-2"></div>
+                    <div class="w3-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-col s12 m6 l4 w3-padding">
+                <div class="w3-card-4 flex-height">
+                    <div class="card-img bg-3"></div>
+                    <div class="w3-container">
+                        <h1 class="w3-text-red"><b>Povero Gabbiano...!</b></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="w3-third w3-col s12 m6 l12 w3-padding">
+                <div class="w3-card-4 flex-height">
+                    <div class="card-img bg-4"></div>
+                    <div class="w3-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam vitae enim possimus sint minus aliquam rem! Vitae accusantium nemo odit quae neque, facere labore eaque fugit quas! Quaerat, facilis!</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <script>
+            w3CodeColor();
+        </script>
+    </body>
+</html>
