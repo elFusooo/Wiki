@@ -10,6 +10,13 @@
             *{
                 text-align: justify;
             }
+            .sticky{
+                position: fixed;
+                top:0;
+            }
+            .margin{
+                margin-top: 40px
+            }
             .justifynt *{
                 text-align: initial;
             }
@@ -42,7 +49,11 @@
         </style>
     </head>
     <body>
-        <div class="w3-panel w3-card w3-light-grey justifynt"> 
+        <div class="w3-bar sticky w3-white w3-card">
+            <a href="index.html"><div class="w3-bar-item w3-button w3-green">Home</div></a>
+        </div>
+        <div class="w3-panel w3-card w3-light-grey justifynt margin">
+            <!-- https://www.w3schools.com/w3css/w3css_code.asp -->
             <h4>Come applicare il Tutto</h4>
             <p>Importa le seguenti classi</p>
             <div class="w3-code cssHigh">
@@ -76,7 +87,7 @@
                 &nbsp; &lt;/div><br>
                 &lt;/div>
             </div>
-            <p>Crea una classe css con un immagine di sfondo e applica la classe alla card, come nell'esempio precedente</p>
+            <p>Crea una classe css con un immagine di sfondo e applica la classe alla card, come al codice precedente</p>
             <div class="w3-code cssHigh">
                 .bg-1{<br>
                 &nbsp; background-image: url("https://www.w3schools.com/w3css/img_car.jpg");<br>
