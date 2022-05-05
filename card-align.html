@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Allinea le immagini</title>
+        <title>Come allineare le card</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
         <style>
@@ -44,7 +44,10 @@
                 background-image: url("https://www.ideegreen.it/wp-content/uploads/2018/08/gabbiano-reale-mediterraneo.jpg");
             }
             .bg-4{
-                background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Pope_Francis_South_Korea_2014.png/640px-Pope_Francis_South_Korea_2014.png");
+                /* Opzionale, per centrarle meglio */
+                /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-position?retiredLocale=it */ 
+                background-position: 0 20%
             }
         </style>
     </head>
@@ -92,7 +95,10 @@
             <p>Crea una classe css con un immagine di sfondo e applica la classe alla card, come al codice precedente</p>
             <div class="w3-code cssHigh">
                 .bg-1{<br>
-                &nbsp; background-image: url("https://www.w3schools.com/w3css/img_car.jpg");<br>
+                &nbsp; background-image: url("<a href="https://www.w3schools.com/w3css/img_car.jpg" target="_blank">https://www.w3schools.com/w3css/img_car.jpg</a>");<br>
+                &nbsp; /* Opzionale, per centrarle meglio */<br>
+                &nbsp; /* <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position?retiredLocale=it" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/background-position?retiredLocale=it</a> */ <br>
+                &nbsp; background-position: 0 20%<br>
                 }
             </div>
         </div>
@@ -127,7 +133,7 @@
                 <div class="w3-card-4 flex-height">
                     <div class="card-img bg-4"></div>
                     <div class="w3-container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam vitae enim possimus sint minus aliquam rem! Vitae accusantium nemo odit quae neque, facere labore eaque fugit quas! Quaerat, facilis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam vitae enim possimus sint minus aliquam rem! Vitae accusantium nemo odit quae neque, facere labore eaque fugit quas! Quaerat, facilis! <b>Amen!</b></p>
                     </div>
                 </div> 
             </div>
