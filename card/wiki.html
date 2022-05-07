@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Come allineare le card</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="card.css">
         <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
         <style>
             *{
@@ -19,20 +20,6 @@
             }
             .justifynt *{
                 text-align: initial;
-            }
-            .flex-height{
-                min-height: 100%;
-            }
-            .flex{
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .card-img{
-                width: 100%;
-                aspect-ratio: 1920/1080;
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: center;
             }
             .bg-1{
                 background-image: url("https://www.w3schools.com/w3css/img_car.jpg");
@@ -53,12 +40,16 @@
     </head>
     <body>
         <div class="w3-bar sticky w3-white w3-card">
-            <a href="index.html"><div class="w3-bar-item w3-button w3-green">Home</div></a>
+            <a href="../"><div class="w3-bar-item w3-button w3-green">Home</div></a>
         </div>
         <div class="w3-panel w3-card w3-light-grey justifynt margin">
             <!-- https://www.w3schools.com/w3css/w3css_code.asp -->
             <h4>Come applicare il Tutto</h4>
-            <p>Importa le seguenti classi</p>
+            <p>Importa il foglio CSS...</p>
+            <div class="w3-code htmlHigh">
+                &lt;link rel="stylesheet" href="https://wiki.fuso.ml/card/card.css">
+            </div>
+            <p>...o in alternativa le seguenti classi</p>
             <div class="w3-code cssHigh">
                 .flex-height{<br>
                 &nbsp; min-height: 100%;<br>
@@ -69,8 +60,8 @@
                 }<br>
                 .card-img{<br>
                 &nbsp; width: 100%;<br>
-                &nbsp; /* Ciò che Forza le proporzioni a 1920 di larghezza e 1080 di altezza */<br>
                 &nbsp; aspect-ratio: 1920/1080;<br>
+                &nbsp; /* Ciò che Forza le proporzioni a 1920 di larghezza e 1080 di altezza */<br>
                 &nbsp; background-repeat: no-repeat;<br>
                 &nbsp; background-size: 100%;<br>
                 &nbsp; background-position: center;<br>
